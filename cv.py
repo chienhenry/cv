@@ -3,6 +3,7 @@ import streamlit as st
 st.set_page_config(page_title='钱海飞的简历',page_icon='📚',layout='wide',initial_sidebar_state='auto')
 
 with st.sidebar:
+    st.logo(image='pic.jpg',link='https://henrychien.streamlit.app/')
     page = st.radio('#### 导航栏',('#### 🧾个人概况','#### 💡作品展示','#### :email:联系方式'))
 if page == '#### 🧾个人概况':
     left_column, right_column = st.columns([8,2])
@@ -13,7 +14,7 @@ if page == '#### 🧾个人概况':
         st.write('<center>求职意向：Python开发工程师</center>',unsafe_allow_html=True)
         
     with right_column:
-        st.image('QR/baidu.png', width=120,output_format='PNG')
+        st.image('pic.jpg', width=120,output_format='PNG')
         
     st.write("##### 🛠️专业技能")
     st.write("**数据挖掘**：数据获取、数据合并、数据清洗、数据建模、数据可视化")
@@ -68,7 +69,7 @@ elif page == '#### 💡作品展示':
     with tabs[0]:
         columns = st.columns([2,8])
         with columns[0]:
-            bi = st.radio('👀**查看作品**',['PowerBI销售业务分析报告','PowerBI人力资源分析报告','PowerBI财务报表分析报告'])
+            bi = st.radio('👀**查看作品**',['PowerBI销售业务分析报告','PowerBI人力资源分析报告','PowerBI财务报表分析报告'],label_visibility='hidden')
         with columns[1]:
             cols = st.columns((8,2))    
             with cols[0]:
@@ -90,20 +91,25 @@ elif page == '#### 💡作品展示':
         columns = st.columns([2,8])
         with columns[0]:
             ai = st.radio('👀**查看作品**',
-                          ['视频脚本一键生成器','爆款小红书文案生成器','克隆ChatGPT','智能PDF问答工具','CSV数据分析智能工具'])
+                          ['视频脚本一键生成器','爆款小红书文案生成器','克隆ChatGPT','智能PDF问答工具','CSV数据分析智能工具'],label_visibility='hidden')
         with columns[1]:
             cols = st.columns((8,2))    
             with cols[0]:
                 if ai == '视频脚本一键生成器':
-                    st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E8%A7%86%E9%A2%91%E8%84%9A%E6%9C%AC%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E5%99%A8)')
+                    st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/%E8%A7%86%E9%A2%91%E8%84%9A%E6%9C%AC%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E5%99%A8')
+                    # st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E8%A7%86%E9%A2%91%E8%84%9A%E6%9C%AC%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E5%99%A8)')
                 elif ai == '爆款小红书文案生成器':
-                    st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E7%88%86%E6%AC%BE%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%96%87%E6%A1%88%E7%94%9F%E6%88%90%E5%99%A8)')
+                    st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/%E7%88%86%E6%AC%BE%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%96%87%E6%A1%88%E7%94%9F%E6%88%90%E5%99%A8')
+                    # st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E7%88%86%E6%AC%BE%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%96%87%E6%A1%88%E7%94%9F%E6%88%90%E5%99%A8)')
                 elif ai == '克隆ChatGPT':
-                    st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E5%85%8B%E9%9A%86ChatGPT)')              
+                    st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/%E5%85%8B%E9%9A%86ChatGPT')
+                    # st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E5%85%8B%E9%9A%86ChatGPT)')              
                 elif ai == '智能PDF问答工具':
-                    st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E6%99%BA%E8%83%BDPDF%E9%97%AE%E7%AD%94%E5%B7%A5%E5%85%B7)')
+                    st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/%E6%99%BA%E8%83%BDPDF%E9%97%AE%E7%AD%94%E5%B7%A5%E5%85%B7')
+                    # st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E6%99%BA%E8%83%BDPDF%E9%97%AE%E7%AD%94%E5%B7%A5%E5%85%B7)')
                 elif ai == 'CSV数据分析智能工具':
-                    st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/)')       
+                    st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/')
+                    # st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/)')       
             with cols[1]:
                 st.write('👇🏼**静态预览**')
             if ai == '视频脚本一键生成器':
@@ -119,16 +125,19 @@ elif page == '#### 💡作品展示':
     with tabs[2]:
         columns = st.columns([2,8])
         with columns[0]:
-            ml = st.radio('👀**查看作品**',['随机森林分类器','随机森林回归器','销售数据仪表板'])
+            ml = st.radio('👀**查看作品**',['随机森林分类器','随机森林回归器','销售数据仪表板'],label_visibility='hidden')
         with columns[1]:
             cols = st.columns((8,2))    
             with cols[0]:
                 if ml == '随机森林分类器':
-                    st.write('🔗[**交互查看**](https://randomforestclassifier01.streamlit.app/)')
+                    st.link_button(label='**🔗交互查看**',url='https://randomforestclassifier01.streamlit.app/')
+                    # st.write('🔗[**交互查看**](https://randomforestclassifier01.streamlit.app/)')
                 elif ml == '随机森林回归器':
-                    st.write('🔗[**交互查看**](https://insurancepred.streamlit.app/)')
+                    st.link_button(label='**🔗交互查看**',url='https://insurancepred.streamlit.app/')
+                    # st.write('🔗[**交互查看**](https://insurancepred.streamlit.app/)')
                 elif ml == '销售数据仪表板':
-                    st.write('🔗[**交互查看**](https://dashborad.streamlit.app/)')
+                    st.link_button(label='**🔗交互查看**',url='https://dashborad.streamlit.app/')
+                    # st.write('🔗[**交互查看**](https://dashborad.streamlit.app/)')
             with cols[1]:
                 st.write('👇🏼**静态预览**')
             if ml == '随机森林分类器':
@@ -142,7 +151,7 @@ elif page == '#### 💡作品展示':
     with tabs[3]:
         columns = st.columns([2,8])
         with columns[0]:
-            py = st.radio('👀**查看作品**',['用假设检验分析鸢尾花种类差异显著性','可视化探索帕默群岛企鹅数据','用线性回归预测房价','用逻辑回归预测泰坦尼克幸存情况'])
+            py = st.radio('👀**查看作品**',['用假设检验分析鸢尾花种类差异显著性','可视化探索帕默群岛企鹅数据','用线性回归预测房价','用逻辑回归预测泰坦尼克幸存情况'],label_visibility='hidden')
         with columns[1]:
             cols = st.columns((8,2))    
             with cols[0]:
@@ -165,27 +174,46 @@ elif page == '#### 💡作品展示':
             elif py == '用逻辑回归预测泰坦尼克幸存情况':
                 st.image('titannic.jpeg',output_format='PNG')
     with tabs[4]:
-        columns = st.columns([2,8])
-        with columns[0]:
-            sql = st.radio('👀**查看作品**',['作品D','作品E','作品F'])
-        with columns[1]:
-            cols = st.columns((8,2))    
-            with cols[0]:
-                if sql == '作品D':
-                    st.download_button(label="**下载完整报告⏬**",data=open('pic.pdf', 'rb'),file_name=f'钱海飞_{sql}.pdf')
-                elif sql == '作品E':
-                    st.download_button(label="**下载完整报告⏬**",data=open('pic.pdf', 'rb'),file_name=f'钱海飞_{sql}.pdf')
-                elif sql == '作品F':
-                    st.download_button(label="**下载完整报告⏬**",data=open('pic.pdf', 'rb'),file_name=f'钱海飞_{sql}.pdf')
-            with cols[1]:
-                st.write('👇🏼**静态预览**')
-            if sql == '作品D':
-                st.image('QR/baidu.png',output_format='PNG')
-            elif sql == '作品E':
-                st.image('QR/baidu.png',output_format='PNG')
-            elif sql == '作品F':
-                st.image('QR/baidu.png',output_format='PNG')
+        # columns = st.columns([2,8])
+        # with columns[0]:
+        #     sql = st.radio('👀**查看作品**',['作品D','作品E','作品F'],label_visibility='hidden')
+        # with columns[1]:
+        #     cols = st.columns((8,2))    
+        #     with cols[0]:
+        #         if sql == '作品D':
+        #             st.download_button(label="**下载完整报告⏬**",data=open('pic.pdf', 'rb'),file_name=f'钱海飞_{sql}.pdf')
+        #         elif sql == '作品E':
+        #             st.download_button(label="**下载完整报告⏬**",data=open('pic.pdf', 'rb'),file_name=f'钱海飞_{sql}.pdf')
+        #         elif sql == '作品F':
+        #             st.download_button(label="**下载完整报告⏬**",data=open('pic.pdf', 'rb'),file_name=f'钱海飞_{sql}.pdf')
+        #     with cols[1]:
+        #         st.write('👇🏼**静态预览**')
+        #     if sql == '作品D':
+        #         st.image('QR/baidu.png',output_format='PNG')
+        #     elif sql == '作品E':
+        #         st.image('QR/baidu.png',output_format='PNG')
+        #     elif sql == '作品F':
+        #         st.image('QR/baidu.png',output_format='PNG')
+        # st.page_link(page = 'pages/sql.py',label = '中',icon = '🀄️')
+        # pages = [
+        #     # "Your account" : [
+        #         st.Page("cv.py", title="Create your account"),
+        #         st.Page("sql.py", title="Manage your account")
+        #     # ]
+        #     # "Resources" : [
+        #     #     st.Page("cv.py", title="Learn about us"),
+        #     #     st.Page("sql.py", title="Try it out")
+        #     # ]
+        # ]
+        # pg = st.navigation(pages)
+        # pg.run()
+        pages = [st.Page('sql.py', title="SQL")]
+        st.navigation(pages).run()
         
 else:
+    st.empty().container(height = 150,border = False)
+    with st.container(height = 100,border = False):
+        st.markdown('### <center>💬唯有知识，让我们免于平庸！</center>',unsafe_allow_html=True)
+    st.markdown('### 与我联系：')
     st.markdown('#### ☎️：13776317568')
     st.markdown('#### 📧：qhf0261120@163.com')
