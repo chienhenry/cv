@@ -5,6 +5,9 @@ st.set_page_config(page_title='钱海飞的简历',page_icon='📚',layout='wide
 with st.sidebar:
     st.logo(image='pic.jpg',link='https://henrychien.streamlit.app/')
     page = st.radio('#### 导航栏',('#### 🧾个人概况','#### 💡作品展示','#### :email:联系方式'))
+    st.container(height=320,border=False)
+    st.divider()
+    st.download_button(label='⏬下载简历',data=open('用线性回归预测房价分析报告.pdf', 'rb'),file_name='钱海飞的简历.pdf',mime='application/pdf')
 if page == '#### 🧾个人概况':
     left_column, right_column = st.columns([8,2])
     with left_column:
@@ -65,7 +68,7 @@ if page == '#### 🧾个人概况':
              """)
 
 elif page == '#### 💡作品展示':
-    tabs = st.tabs(('📊**Power BI作品集 |**','🤖**AI作品集 |**','🧠**机器学习作品集 |**','🐍**Python数据分析作品集 |**','🔍**SQL数据分析作品集**'))
+    tabs = st.tabs(('📊**Power BI作品集 |**','🤖**AI作品集 |**','🧠**机器学习作品集 |**','🐍**Python数据分析作品集 |**','🔍**SQL数据分析作品集 |**'))
     with tabs[0]:
         columns = st.columns([2,8])
         with columns[0]:
@@ -151,25 +154,25 @@ elif page == '#### 💡作品展示':
     with tabs[3]:
         columns = st.columns([2,8])
         with columns[0]:
-            py = st.radio('👀**查看作品**',['用假设检验分析鸢尾花种类差异显著性','可视化探索帕默群岛企鹅数据','用线性回归预测房价','用逻辑回归预测泰坦尼克幸存情况'],label_visibility='hidden')
+            py = st.radio('👀**查看作品**',['用假设检验分析鸢尾花种类差异显著性','可视化探索帕默群岛企鹅数据','用线性回归预测房屋价格','用逻辑回归预测泰坦尼克幸存情况'],label_visibility='hidden')
         with columns[1]:
             cols = st.columns((8,2))    
             with cols[0]:
                 if py == '用假设检验分析鸢尾花种类差异显著性':
-                    st.download_button(label="**下载完整报告⏬**",data=open('用假设检验分析鸢尾花种类差异显著性.pdf', 'rb'),file_name=f'钱海飞_{py}分析报告.pdf')
+                    st.download_button(label="**下载清晰完整报告⏬**",data=open('用假设检验分析鸢尾花种类差异显著性.pdf', 'rb'),file_name=f'钱海飞_{py}分析报告.pdf')
                 elif py == '可视化探索帕默群岛企鹅数据':
-                    st.download_button(label="**下载完整报告⏬**",data=open('可视化探索帕默群岛企鹅数据分析报告.pdf', 'rb'),file_name=f'钱海飞_{py}分析报告.pdf')
-                elif py == '用线性回归预测房价':
-                    st.download_button(label="**下载完整报告⏬**",data=open('用线性回归预测房价分析报告.pdf', 'rb'),file_name=f'钱海飞_{py}分析报告.pdf')
+                    st.download_button(label="**下载清晰完整报告⏬**",data=open('可视化探索帕默群岛企鹅数据分析报告.pdf', 'rb'),file_name=f'钱海飞_{py}分析报告.pdf')
+                elif py == '用线性回归预测房屋价格':
+                    st.download_button(label="**下载清晰完整报告⏬**",data=open('用线性回归预测房价分析报告.pdf', 'rb'),file_name=f'钱海飞_{py}分析报告.pdf')
                 elif py == '用逻辑回归预测泰坦尼克幸存情况':
-                    st.download_button(label="**下载完整报告⏬**",data=open('用逻辑回归预测泰坦尼克号幸存情况.pdf', 'rb'),file_name=f'钱海飞_{py}分析报告.pdf')
+                    st.download_button(label="**下载清晰完整报告⏬**",data=open('用逻辑回归预测泰坦尼克号幸存情况.pdf', 'rb'),file_name=f'钱海飞_{py}分析报告.pdf')
             with cols[1]:
                 st.write('👇🏼**静态预览**')
             if py == '用假设检验分析鸢尾花种类差异显著性':
                 st.image('iris.jpeg',output_format='PNG')
             elif py == '可视化探索帕默群岛企鹅数据':
                 st.image('penguin.jpeg',output_format='PNG')
-            elif py == '用线性回归预测房价':
+            elif py == '用线性回归预测房屋价格':
                 st.image('price_pred.jpeg',output_format='PNG')
             elif py == '用逻辑回归预测泰坦尼克幸存情况':
                 st.image('titannic.jpeg',output_format='PNG')
@@ -211,9 +214,14 @@ elif page == '#### 💡作品展示':
         st.navigation(pages).run()
         
 else:
-    st.empty().container(height = 150,border = False)
-    with st.container(height = 100,border = False):
-        st.markdown('### <center>💬唯有知识，让我们免于平庸！</center>',unsafe_allow_html=True)
+    # st.empty().container(height = 150,border = False)
+    # with st.container(height = 500,border = False):
+    columns=st.columns([2,6,2])
+    # with columns[0]:
+    #     st.image('Drucker01.png',width=600)
+    with columns[1]:
+        st.image('Drucker01.png',width=600)
+        # st.markdown('### <center>💬唯有知识，让我们免于平庸！</center>',unsafe_allow_html=True)
     st.markdown('### 与我联系：')
     st.markdown('#### ☎️：13776317568')
     st.markdown('#### 📧：qhf0261120@163.com')
