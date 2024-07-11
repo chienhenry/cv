@@ -260,9 +260,9 @@ elif page == '#### 💡作品展示':
         st.navigation(pages).run()
         
     with tabs[4]:
-        video_file = open('video/自动化批量爬取网页内容.mp4', 'rb')
-        video_bytes = video_file.read()
-        st.video(video_bytes)
+        # video_file = open('video/自动化批量爬取网页内容.mp4', 'rb')
+        # video_bytes = video_file.read()
+        st.video('video/自动化批量爬取网页内容.mp4')
         
 else:
     # st.empty().container(height = 150,border = False)
