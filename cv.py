@@ -74,10 +74,6 @@ if page == '#### 🧾个人概况':
              """)
     st.divider()
     
-    # st.write("##### 📋项目经历")
-    # st.write('- 熟练掌握Python语言，有良好的编程习惯，能够编写高效、可读性强的代码。')
-    # st.divider()
-    
     st.write("##### 🎓教育背景")
     columns = st.columns([4,3,3])
     with columns[0]:
@@ -130,12 +126,6 @@ elif page == '#### 💡作品展示':
                           'finance_pic/finance5.png',
                           'finance_pic/finance6.png',
                           'finance_pic/finance7.png'])
-                # st.image('finance_pic/finance2.png')
-                # st.image('finance_pic/finance3.png')
-                # st.image('finance_pic/finance4.png')
-                # st.image('finance_pic/finance5.png')
-                # st.image('finance_pic/finance6.png')
-                # st.image('finance_pic/finance7.png')
     with tabs[1]:
         columns = st.columns([2,8])
         with columns[0]:
@@ -146,19 +136,14 @@ elif page == '#### 💡作品展示':
             with cols[0]:
                 if ai == '视频脚本一键生成器':
                     st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/%E8%A7%86%E9%A2%91%E8%84%9A%E6%9C%AC%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E5%99%A8')
-                    # st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E8%A7%86%E9%A2%91%E8%84%9A%E6%9C%AC%E4%B8%80%E9%94%AE%E7%94%9F%E6%88%90%E5%99%A8)')
                 elif ai == '爆款小红书文案生成器':
                     st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/%E7%88%86%E6%AC%BE%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%96%87%E6%A1%88%E7%94%9F%E6%88%90%E5%99%A8')
-                    # st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E7%88%86%E6%AC%BE%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%96%87%E6%A1%88%E7%94%9F%E6%88%90%E5%99%A8)')
                 elif ai == '克隆ChatGPT':
-                    st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/%E5%85%8B%E9%9A%86ChatGPT')
-                    # st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E5%85%8B%E9%9A%86ChatGPT)')              
+                    st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/%E5%85%8B%E9%9A%86ChatGPT')              
                 elif ai == '智能PDF问答工具':
                     st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/%E6%99%BA%E8%83%BDPDF%E9%97%AE%E7%AD%94%E5%B7%A5%E5%85%B7')
-                    # st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/%E6%99%BA%E8%83%BDPDF%E9%97%AE%E7%AD%94%E5%B7%A5%E5%85%B7)')
                 elif ai == 'CSV数据分析智能工具':
-                    st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/')
-                    # st.write('🔗[**交互查看**](https://aiagent01.streamlit.app/)')       
+                    st.link_button(label='**🔗交互查看**',url='https://aiagent01.streamlit.app/')      
             with cols[1]:
                 st.write('👇🏼**静态预览**')
             if ai == '视频脚本一键生成器':
@@ -180,13 +165,10 @@ elif page == '#### 💡作品展示':
             with cols[0]:
                 if ml == '随机森林分类器':
                     st.link_button(label='**🔗交互查看**',url='https://randomforestclassifier01.streamlit.app/')
-                    # st.write('🔗[**交互查看**](https://randomforestclassifier01.streamlit.app/)')
                 elif ml == '随机森林回归器':
                     st.link_button(label='**🔗交互查看**',url='https://insurancepred.streamlit.app/')
-                    # st.write('🔗[**交互查看**](https://insurancepred.streamlit.app/)')
                 elif ml == '销售数据仪表板':
                     st.link_button(label='**🔗交互查看**',url='https://dashborad.streamlit.app/')
-                    # st.write('🔗[**交互查看**](https://dashborad.streamlit.app/)')
             with cols[1]:
                 st.write('👇🏼**静态预览**')
             if ml == '随机森林分类器':
@@ -223,61 +205,24 @@ elif page == '#### 💡作品展示':
             elif py == '用逻辑回归预测泰坦尼克幸存情况':
                 st.image('titannic.jpeg',output_format='PNG')
     with tabs[4]:
-        # columns = st.columns([2,8])
-        # with columns[0]:
-        #     sql = st.radio('👀**查看作品**',['作品D','作品E','作品F'],label_visibility='hidden')
-        # with columns[1]:
-        #     cols = st.columns((8,2))    
-        #     with cols[0]:
-        #         if sql == '作品D':
-        #             st.download_button(label="**下载完整报告⏬**",data=open('pic.pdf', 'rb'),file_name=f'钱海飞_{sql}.pdf')
-        #         elif sql == '作品E':
-        #             st.download_button(label="**下载完整报告⏬**",data=open('pic.pdf', 'rb'),file_name=f'钱海飞_{sql}.pdf')
-        #         elif sql == '作品F':
-        #             st.download_button(label="**下载完整报告⏬**",data=open('pic.pdf', 'rb'),file_name=f'钱海飞_{sql}.pdf')
-        #     with cols[1]:
-        #         st.write('👇🏼**静态预览**')
-        #     if sql == '作品D':
-        #         st.image('QR/baidu.png',output_format='PNG')
-        #     elif sql == '作品E':
-        #         st.image('QR/baidu.png',output_format='PNG')
-        #     elif sql == '作品F':
-        #         st.image('QR/baidu.png',output_format='PNG')
-        # st.page_link(page = 'pages/sql.py',label = '中',icon = '🀄️')
-        # pages = [
-        #     # "Your account" : [
-        #         st.Page("cv.py", title="Create your account"),
-        #         st.Page("sql.py", title="Manage your account")
-        #     # ]
-        #     # "Resources" : [
-        #     #     st.Page("cv.py", title="Learn about us"),
-        #     #     st.Page("sql.py", title="Try it out")
-        #     # ]
-        # ]
-        # pg = st.navigation(pages)
-        # pg.run()
         pages = [st.Page('sql.py', title="SQL")]
         st.navigation(pages).run()
         
-    with tabs[4]:
-        video_path = 'video/自动化批量爬取网页内容.mp4'
-        # 使用相对路径或绝对路径读取视频文件
-        try:
-            with open(video_path, 'rb') as video_file:
-                video_bytes = video_file.read()
-                st.video(video_bytes)
-        except FileNotFoundError:
-            st.error("视频文件未找到，请检查文件路径是否正确。")
+    with tabs[5]:
+        st.write("""
+                 **【项目介绍】**\n\n
+                本项目旨在通过自动化流程实现每日循环切换账号，基于各个账号的凭证批量获取某商城后台数据并存储至本地。
+                数据抓取至本地后系统为每个账号创建相应的同名工作表，以高效、准确地存储获取的数据，
+                从而为后续的数据分析和可视化展示提供坚实的基础。
+                 """)
+        st.write("")
+        st.write('👇🏼**以下为录制的完整自动化数据抓取过程**')
+        st.video("video/自动化批量爬取网页内容.mp4")
         
 else:
-    # st.empty().container(height = 150,border = False)
-    # with st.container(height = 500,border = False):
     columns=st.columns([2,6,2])
-    # with columns[0]:
-    #     st.image('Drucker01.png',width=600)
     with columns[1]:
         st.image('Drucker01.png',width=600)
-        # st.markdown('### <center>💬唯有知识，让我们免于平庸！</center>',unsafe_allow_html=True)
     st.markdown('### 与我联系：')
     st.markdown('#### ☎️：13776317568')
     st.markdown('#### 📧：qhf0261120@163.com')
