@@ -7,7 +7,7 @@ with st.sidebar:
     page = st.radio('#### 导航栏',('#### 🧾个人概况','#### 💡作品展示','#### :email:联系方式'))
     st.container(height=320,border=False)
     st.divider()
-    st.download_button(label='⏬下载简历',data=open('用线性回归预测房价分析报告.pdf', 'rb'),file_name='钱海飞的简历.pdf',mime='application/pdf')
+    # st.download_button(label='⏬下载简历',data=open('用线性回归预测房价分析报告.pdf', 'rb'),file_name='钱海飞的简历.pdf',mime='application/pdf')
 if page == '#### 🧾个人概况':
     left_column, right_column = st.columns([8,2])
     with left_column:
@@ -32,7 +32,7 @@ if page == '#### 🧾个人概况':
     with columns[1]:
         st.write("运营总监") 
     with columns[2]:
-        st.write("2020.08 - 至今")    
+        st.write("2020.08 - ") # 待完善   
     st.write("""
             - **团队管理：** 领导团队完成物流部门的日常工作，包括货物的接收、储存、发运等。制定并执行团队目标，激励团队成员积极工作，提高工作效率和质量。
             - **供应链管理：** 负责公司的供应链管理，协调采购、仓储、运输等部门，确保物流运作顺畅高效。维护与供应商和客户的关系，优化供应链流程，降低成本，提高服务质量。
@@ -52,7 +52,7 @@ if page == '#### 🧾个人概况':
     st.write('')
     columns = st.columns([5,2,3])
     with columns[0]:
-        st.write("**苏州工业园区顺丰速运有限公司**")    
+        st.write("**苏州工业园区顺丰速运有限公司**")    # 加上获奖情况
     with columns[1]:
         st.write("经营分部负责人") 
     with columns[2]:
@@ -60,7 +60,7 @@ if page == '#### 🧾个人概况':
     st.write("""
             - **经营规划：** 结合公司战略及地区业务方向，制定片区的经营策略，并统筹片区经营管理，把握片区经营节奏，合理统筹部署相应资源投入，确保投入产出最大化，推动片区收入、利润、底盘均衡发展。
 
-            - **业务拓展：** 洞察片区市场，掌握客户及客户供应链上下游情况，关注客户需求变化，识别潜在业务机会，联动各组织，利用多元化的产品策略（大件、冷运、医药、国际、仓储、同城、丰网等）制定客户解决方案及响应客户需求，做深做大片区业务规模。
+            - **业务拓展：** 洞察片区市场，掌握客户及客户供应链上下游情况，关注客户需求变化，识别潜在业务机会，联动各组织，利用多元化的产品策略（大件、冷运、医药、国际、仓储、同城等）制定客户解决方案及响应客户需求，做深做大片区业务规模。
 
             - **精益管理：** 从所辖片区中长期竞争力出发，在充分理解集团各项变革项目前提下，标准SOP落地、以模式变革推动结构成本的弹性化，实现高质量客户体验的稳定交付。
 
@@ -73,6 +73,9 @@ if page == '#### 🧾个人概况':
             - **营销策划：** 制定营销策略，提升公司品牌知名度，提升客户忠诚度，促进公司业务发展。
              """)
     st.divider()
+    
+    # st.write("##### 🎓教育背景") # 完善项目经历
+    # st.divider()
     
     st.write("##### 🎓教育背景")
     columns = st.columns([4,3,3])
@@ -159,22 +162,22 @@ elif page == '#### 💡作品展示':
     with tabs[2]:
         columns = st.columns([2,8])
         with columns[0]:
-            ml = st.radio('👀**查看作品**',['随机森林分类器','随机森林回归器','销售数据仪表板'],label_visibility='hidden')
+            ml = st.radio('👀**查看作品**',['用随机森林分类算法模型预测企鹅种类','用随机森林回归模型预测医疗费用','销售数据仪表板'],label_visibility='hidden')
         with columns[1]:
             cols = st.columns((8,2))    
             with cols[0]:
-                if ml == '随机森林分类器':
+                if ml == '用随机森林分类算法模型预测企鹅种类':
                     st.link_button(label='**🔗交互查看**',url='https://randomforestclassifier01.streamlit.app/')
-                elif ml == '随机森林回归器':
+                elif ml == '用随机森林回归模型预测医疗费用':
                     st.link_button(label='**🔗交互查看**',url='https://insurancepred.streamlit.app/')
                 elif ml == '销售数据仪表板':
                     st.link_button(label='**🔗交互查看**',url='https://dashborad.streamlit.app/')
             with cols[1]:
                 st.write('👇🏼**静态预览**')
-            if ml == '随机森林分类器':
+            if ml == '用随机森林分类算法模型预测企鹅种类':
                 st.image('penguin01.png',output_format='PNG')
                 st.image('penguin02.png',output_format='PNG')
-            elif ml == '随机森林回归器':
+            elif ml == '用随机森林回归模型预测医疗费用':
                 st.image('insurance01.png',output_format='PNG')
                 st.image('insurance02.png',output_format='PNG')
             elif ml == '销售数据仪表板':
