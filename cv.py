@@ -13,16 +13,16 @@ if page == '#### 🧾个人概况':
     with left_column:
         st.write("#### <center>钱 海 飞</center>",unsafe_allow_html=True)
         mail_text = 'qhf0261120@163.com'
-        st.write('<center>男 | 13776317568 | qhf0261120@163.com | 本科</center>',unsafe_allow_html=True)
-        st.write('<center>求职意向：Python开发工程师</center>',unsafe_allow_html=True)
+        st.write('<center>本科 | 13776317568 | qhf0261120@163.com </center>',unsafe_allow_html=True)
+        st.write('<center>求职意向：运营总监/物流总监</center>',unsafe_allow_html=True)
         
     with right_column:
         st.image('pic.jpg', width=120,output_format='PNG')
         
     st.write("##### 🛠️专业技能")
-    st.write("**数据挖掘**：数据获取、数据合并、数据清洗、数据建模、数据可视化")
-    st.write("**数据分析**：假设检验、回归分析、业务诊断、异动分析、业务预测")
-    st.write("**掌握工具**：Python、SQL、PowerBI、PowerQuery、DAX、M、PowerApps、RPA")
+    st.write("**数据分析**：指标体系、业务诊断、异动分析、预测分析、假设检验、回归分析")
+    st.write("**数据挖掘**：数据获取、数据评估、数据合并、数据清洗、数据建模、数据可视化")
+    st.write("**掌握工具**：Python、SQL、PowerBI、PowerQuery、DAX、M、Power Apps、RPA")
     st.divider()
     
     st.write("##### 💼工作经历")
@@ -34,8 +34,20 @@ if page == '#### 🧾个人概况':
     with columns[2]:
         st.write("2020.08 - 至今")    
     st.write("""
-             - **团队管理：** 负责公司内部的工作流程、团队建设、沟通协调等工作。
-             - **项目管理：** 负责公司内部的项目管理、进度控制、资源协调等工作。
+            - **团队管理：** 领导团队完成物流部门的日常工作，包括货物的接收、储存、发运等。制定并执行团队目标，激励团队成员积极工作，提高工作效率和质量。
+            - **供应链管理：** 负责公司的供应链管理，协调采购、仓储、运输等部门，确保物流运作顺畅高效。维护与供应商和客户的关系，优化供应链流程，降低成本，提高服务质量。
+            - **成本控制：** 对物流运作的成本进行分析和控制，制定成本控制策略，降低物流成本，提高公司盈利能力。
+            - **安全管理：** 负责物流安全管理工作，制定并执行安全管理制度，加强货物保护和安全防范，确保物流运作的安全可靠。
+
+            - **战略规划：** 负责公司供应链战略的制定和实施，包括供应商管理、采购、物流、库存管理等方面的规划和优化。
+
+            - **供应商管理：** 负责与供应商建立战略合作关系，制定供应商评价体系，确保供应商的质量和交货期等符合公司要求。
+
+            - **采购管理：** 负责采购流程的优化和改进，确保采购的成本和质量符合公司要求。
+
+            - **物流管理：** 负责物流流程的优化和改进，确保物流的准时性和成本控制。
+
+            - **库存管理：** 负责库存的管理和优化，确保库存的合理化和减少库存积压。
              """)
     st.write('')
     columns = st.columns([5,2,3])
@@ -46,14 +58,25 @@ if page == '#### 🧾个人概况':
     with columns[2]:
         st.write("2015.06 - 2020.07")    
     st.write("""
-             - **团队管理：** 负责公司内部的工作流程、团队建设、沟通协调等工作。
-             - **项目管理：** 负责公司内部的项目管理、进度控制、资源协调等工作。
+            - **经营规划：** 结合公司战略及地区业务方向，制定片区的经营策略，并统筹片区经营管理，把握片区经营节奏，合理统筹部署相应资源投入，确保投入产出最大化，推动片区收入、利润、底盘均衡发展。
+
+            - **业务拓展：** 洞察片区市场，掌握客户及客户供应链上下游情况，关注客户需求变化，识别潜在业务机会，联动各组织，利用多元化的产品策略（大件、冷运、医药、国际、仓储、同城、丰网等）制定客户解决方案及响应客户需求，做深做大片区业务规模。
+
+            - **精益管理：** 从所辖片区中长期竞争力出发，在充分理解集团各项变革项目前提下，标准SOP落地、以模式变革推动结构成本的弹性化，实现高质量客户体验的稳定交付。
+
+            - **团队建设：** 营造积极向上的团队氛围，识人用人，组建干部团队，清晰充分授权，并灵活运用考核激励辅导等，提升团队绩效，输出经营人才。
+
+            - **风险管控：** 实现经营目标的过程中，将信息、人员、舆论、客户、快件、资金等各类风险进行前置识别及闭环管控，确保风险在预期范围内，避免造成组织利益、品牌等损失。
+
+            - **品牌建设:** 推动地区品牌建设工作，提升品牌影响力。
+
+            - **营销策划：** 制定营销策略，提升公司品牌知名度，提升客户忠诚度，促进公司业务发展。
              """)
     st.divider()
     
-    st.write("##### 📋项目经历")
-    st.write('- 熟练掌握Python语言，有良好的编程习惯，能够编写高效、可读性强的代码。')
-    st.divider()
+    # st.write("##### 📋项目经历")
+    # st.write('- 熟练掌握Python语言，有良好的编程习惯，能够编写高效、可读性强的代码。')
+    # st.divider()
     
     st.write("##### 🎓教育背景")
     columns = st.columns([4,3,3])
@@ -68,7 +91,7 @@ if page == '#### 🧾个人概况':
              """)
 
 elif page == '#### 💡作品展示':
-    tabs = st.tabs(('📊**Power BI作品集 |**','🤖**AI作品集 |**','🧠**机器学习作品集 |**','🐍**Python数据分析作品集 |**','🔍**SQL数据分析作品集 |**'))
+    tabs = st.tabs(('📊**Power BI作品集 |**','🤖**AI作品集 |**','🧠**机器学习作品集 |**','🐍**Python数据分析作品集 |**','🔍**SQL数据分析作品集 |**','🕷**爬虫与自动化 |**'))
     with tabs[0]:
         columns = st.columns([2,8])
         with columns[0]:
@@ -77,19 +100,42 @@ elif page == '#### 💡作品展示':
             cols = st.columns((8,2))    
             with cols[0]:
                 if bi == 'PowerBI销售业务分析报告':
-                    st.write('🔗[**交互查看**](https://www.baidu.com)')
+                    st.write('🔗[**交互查看**](https://app.powerbi.com/view?r=eyJrIjoiOWJjYjk4NjEtY2ExZC00NWZkLWFiY2YtYzllMjQ0OGZkOGZiIiwidCI6IjViYjFiNzIxLTRmYjItNDI3MS04ZTcxLTMxMzNlZWMzMWU4NSIsImMiOjEwfQ%3D%3D)')
                 elif bi == 'PowerBI人力资源分析报告':
-                    st.write('🔗[**交互查看**](https://www.baidu.com)')
+                    st.write('🔗[**交互查看**](https://app.powerbi.com/view?r=eyJrIjoiM2VmZGU0ZjUtNjkzNS00OThkLWIwYWQtM2U1M2E3ZDliY2E1IiwidCI6IjViYjFiNzIxLTRmYjItNDI3MS04ZTcxLTMxMzNlZWMzMWU4NSIsImMiOjEwfQ%3D%3D)')
                 elif bi == 'PowerBI财务报表分析报告':
-                    st.write('🔗[**交互查看**](https://www.baidu.com)')
+                    st.write('🔗[**交互查看**](https://app.powerbi.com/view?r=eyJrIjoiYTcwZDVjYjItNmY2Ny00MjQyLThkYzUtM2ExOGY3MjY4M2ZjIiwidCI6IjViYjFiNzIxLTRmYjItNDI3MS04ZTcxLTMxMzNlZWMzMWU4NSIsImMiOjEwfQ%3D%3D)')
             with cols[1]:
                 st.write('👇🏼**静态预览**')
             if bi == 'PowerBI销售业务分析报告':
-                st.image('QR/baidu.png',output_format='PNG')
+                st.image(['sales_pic/sales01.png',
+                          'sales_pic/sales02.png',
+                          'sales_pic/sales03.png',
+                          'sales_pic/sales04.png',
+                          'sales_pic/sales05.png',
+                          'sales_pic/sales06.png'])
             elif bi == 'PowerBI人力资源分析报告':
-                st.image('QR/baidu.png',output_format='PNG')
+                st.image(['hr_pic/HR01.png',
+                          'hr_pic/HR02.png',
+                          'hr_pic/HR03.png',
+                          'hr_pic/HR04.png',
+                          'hr_pic/HR05.png',
+                          'hr_pic/HR06.png']
+                          )
             elif bi == 'PowerBI财务报表分析报告':
-                st.image('QR/baidu.png',output_format='PNG')
+                st.image(['finance_pic/finance1.png',
+                          'finance_pic/finance2.png',
+                          'finance_pic/finance3.png',
+                          'finance_pic/finance4.png',
+                          'finance_pic/finance5.png',
+                          'finance_pic/finance6.png',
+                          'finance_pic/finance7.png'])
+                # st.image('finance_pic/finance2.png')
+                # st.image('finance_pic/finance3.png')
+                # st.image('finance_pic/finance4.png')
+                # st.image('finance_pic/finance5.png')
+                # st.image('finance_pic/finance6.png')
+                # st.image('finance_pic/finance7.png')
     with tabs[1]:
         columns = st.columns([2,8])
         with columns[0]:
@@ -122,7 +168,7 @@ elif page == '#### 💡作品展示':
             elif ai == '克隆ChatGPT':
                 st.image('clone_gpt.png',output_format='PNG')        
             elif ai == '智能PDF问答工具':
-                st.image('xhs.png',output_format='PNG')
+                st.image('qa.png',output_format='PNG')
             elif ai == 'CSV数据分析智能工具':
                 st.image('csv.png',output_format='PNG')             
     with tabs[2]:
@@ -212,6 +258,11 @@ elif page == '#### 💡作品展示':
         # pg.run()
         pages = [st.Page('sql.py', title="SQL")]
         st.navigation(pages).run()
+        
+    with tabs[4]:
+        video_file = open('video/自动化批量爬取网页内容.mp4', 'rb')
+        video_bytes = video_file.read()
+        st.video(video_bytes)
         
 else:
     # st.empty().container(height = 150,border = False)
