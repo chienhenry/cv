@@ -260,9 +260,14 @@ elif page == '#### 💡作品展示':
         st.navigation(pages).run()
         
     with tabs[4]:
-        # video_file = open('video/自动化批量爬取网页内容.mp4', 'rb')
-        # video_bytes = video_file.read()
-        st.video('video/自动化批量爬取网页内容.mp4')
+        video_path = 'video/自动化批量爬取网页内容.mp4'
+        # 使用相对路径或绝对路径读取视频文件
+        try:
+            with open(video_path, 'rb') as video_file:
+                video_bytes = video_file.read()
+                st.video(video_bytes)
+        except FileNotFoundError:
+            st.error("视频文件未找到，请检查文件路径是否正确。")
         
 else:
     # st.empty().container(height = 150,border = False)
