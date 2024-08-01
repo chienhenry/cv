@@ -663,19 +663,20 @@ def main_column(page):
     if page == '#### 🧾个人概况':
         personal_info()    
     elif page == '#### 💡作品展示':
-        tabs = st.tabs(('📊**Power BI作品集 |**','🤖**AI作品集 |**','🧠**机器学习作品集 |**','🐍**Python数据分析作品集 |**','🔍**SQL数据分析作品集 |**','🕷**爬虫与自动化 |**'))
-        with tabs[0]:
-            works_bi()    
-        with tabs[1]:
-            works_ai()    
-        with tabs[2]:
-            works_ml()    
-        with tabs[3]:
-            works_py()    
-        with tabs[4]:
-            works_sql()    
-        with tabs[5]:
-            works_auto()    
+        with st.spinner('正在加载...'):
+            tabs = st.tabs(('📊**Power BI作品集 |**','🤖**AI作品集 |**','🧠**机器学习作品集 |**','🐍**Python数据分析作品集 |**','🔍**SQL数据分析作品集 |**','🕷**爬虫与自动化 |**'))
+            with tabs[0]:
+                works_bi()    
+            with tabs[1]:
+                works_ai()    
+            with tabs[2]:
+                works_ml()    
+            with tabs[3]:
+                works_py()    
+            with tabs[4]:
+                works_sql()    
+            with tabs[5]:
+                works_auto()    
     else:
         page_contact()
                 
