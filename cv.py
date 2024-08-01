@@ -41,7 +41,7 @@ def personal_info():
     with columns[1]:
         st.write("**江苏弘帆供应链管理有限公司**") 
     with columns[2]:
-        st.write("**总经理**") # 待完善   
+        st.write("**副总经理**") # 待完善   
     st.write("""
             - **团队管理：** 领导团队完成物流部门的日常工作，包括货物的接收、储存、发运等。制定并执行团队目标，激励团队成员积极工作，提高工作效率和质量。  
             - **战略规划：** 负责公司供应链战略的制定和实施，包括供应商管理、采购、物流、库存管理等方面的规划和优化。  
@@ -122,7 +122,7 @@ def personal_info():
     st.write("##### 💻项目经历")
     columns = st.columns([3,5,2])
     with columns[0]:
-        st.write("**2016.06 - 2024.07**")
+        st.write("**2022.10 - 2022.12**")
     with columns[1]:
         st.write("**经营分析看板**") 
     with columns[2]:
@@ -146,7 +146,7 @@ def personal_info():
     st.write('')
     columns = st.columns([3,5,2])
     with columns[0]:
-        st.write("**2023.05 - 2024.07**")
+        st.write("**2023.05 - 2024.03**")
     with columns[1]:
         st.write("**人工智能工具集**") 
     with columns[2]:
@@ -183,7 +183,7 @@ def personal_info():
 def introduce_sales():
     st.write("""
                     **一、项目背景**    
-                    本报告旨在通过数据可视化工具Power BI，对某企业的销售业务进行全面分析。
+                    本报告旨在通过数据可视化工具Power BI，对企业的销售业务进行全面分析。
                     通过分析销售、利润、订单、客户及产品等多个维度的数据，帮助企业识别业务中的优势和问题，并提出改进建议。  
                         
                     **二、分析思路**  
