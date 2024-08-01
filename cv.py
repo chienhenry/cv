@@ -18,7 +18,7 @@ def personal_info():
         st.write("#### <center>钱 海 飞</center>",unsafe_allow_html=True)
         mail_text = 'qhf0261120@163.com'
         st.write('<center>本科 | 13776317568 | qhf0261120@163.com </center>',unsafe_allow_html=True)
-        st.write('<center>求职意向：运营总监/物流总监/集团总部层面商业分析（数据分析）部门负责人</center>',unsafe_allow_html=True)
+        st.write('<center>求职意向：物流总监/集团总部层面商业分析（数据分析）部门负责人/运营总监</center>',unsafe_allow_html=True)
         
     with right_column:
         st.image('pic.jpg', width=120,output_format='PNG')
@@ -26,23 +26,22 @@ def personal_info():
         
     st.write("##### 🛠️专业技能")
     st.write("""
-            - **数据分析与挖掘：** Python、SQL、Power Query、M、NumPy、Pandas、爬虫  
-            - **建模与可视化：** Power BI、DAX、Power Pivot、Matplotlib、Seaborn  
-            - **统计分析：** 形态分布、离散趋势、集中趋势、假设检验、线性回归、逻辑回归  
-            - **数字化搭建与应用开发：** Streamlit、宜搭、Power Apps  
-            - **集成自动化：** RPA、Power Automate  
-            - **AI大模型(LLM)：** LangChain、Prompt Engineering、Fine Tuning、RAG、Agent、Embedding
+            - **数据清洗与分析：** Python、SQL、Power Query、M、NumPy、Pandas、爬虫  
+            - **数据建模与可视化：** Power BI、DAX、Power Pivot、Matplotlib、Seaborn、Streamlit  
+            - **机器学习与挖掘：** sklearn、形态分布、离散趋势、集中趋势、假设检验、线性回归、逻辑回归  
+            - **数字化与自动化：** RPA、AI Agent、宜搭、Power Automate、Power Apps  
+            - **大模型应用开发：** LangChain、OpenAI Assistant API
              """)
     st.divider()
     
     st.write("##### 💼工作经历")
-    columns = st.columns([5,2,3])
+    columns = st.columns([3,5,2])
     with columns[0]:
-        st.write("**江苏弘帆供应链管理有限公司**")    
+        st.write("**2020.08 - 2024.07**")    
     with columns[1]:
-        st.write("总经理") 
+        st.write("**江苏弘帆供应链管理有限公司**") 
     with columns[2]:
-        st.write("2020.08 - ") # 待完善   
+        st.write("**总经理**") # 待完善   
     st.write("""
             - **团队管理：** 领导团队完成物流部门的日常工作，包括货物的接收、储存、发运等。制定并执行团队目标，激励团队成员积极工作，提高工作效率和质量。  
             - **战略规划：** 负责公司供应链战略的制定和实施，包括供应商管理、采购、物流、库存管理等方面的规划和优化。  
@@ -54,13 +53,13 @@ def personal_info():
             - **物流管理：** 负责物流流程的优化和改进，确保物流的准时性和成本控制。
              """)
     st.write('')
-    columns = st.columns([5,2,3])
+    columns = st.columns([3,5,2])
     with columns[0]:
-        st.write("**苏州工业园区顺丰速运有限公司**")    # 加上获奖情况
+        st.write("**2015.06 - 2020.07**")    # 加上获奖情况
     with columns[1]:
-        st.write("经营分部负责人") 
+        st.write("**苏州工业园区顺丰速运有限公司**") 
     with columns[2]:
-        st.write("2015.06 - 2020.07")    
+        st.write("**经营分部负责人**")    
     st.write("""
             - **经营规划：** 结合公司战略及地区业务方向，制定片区的经营策略，并统筹片区经营管理，把握片区经营节奏，合理统筹部署相应资源投入，确保投入产出最大化，推动片区收入、利润、底盘均衡发展。
             - **业务拓展：** 洞察片区市场，掌握客户及客户供应链上下游情况，关注客户需求变化，识别潜在业务机会，联动各组织，利用多元化的产品策略（大件、冷运、医药、国际、仓储、同城等）制定客户解决方案及响应客户需求，做深做大片区业务规模。
@@ -70,13 +69,13 @@ def personal_info():
             - **品牌建设：** 推动地区品牌建设工作，提升品牌影响力。
              """)
     st.write('')
-    columns = st.columns([5,2,3])
+    columns = st.columns([3,5,2])
     with columns[0]:
-        st.write("**南通云途贸易有限公司**")
+        st.write("**2012.01 - 2015.05**")
     with columns[1]:
-        st.write("线上业务运营负责人") 
+        st.write("**南通云途贸易有限公司**") 
     with columns[2]:
-        st.write("2012.01 - 2015.05")    
+        st.write("**线上业务运营负责人**")    
     st.write("""
             - **运营管理：** 负责商品上架、价格调整、库存管理、物流跟进等运营管理工作，保证商品的正常销售和运营。
             - **数据分析：** 负责公司数据的采集、清洗、分析和报告，为决策提供数据支持，提高业务效率和效益。
@@ -87,13 +86,13 @@ def personal_info():
             - **团队管理：** 管理运营团队，制定团队目标和和考核标准，培养和激励团队成员，确保团队高效运转。
              """)
     st.write('')
-    columns = st.columns([5,2,3])
+    columns = st.columns([3,5,2])
     with columns[0]:
-        st.write("**索尼物流贸易（中国）有限公司**")
+        st.write("**2007.12 - 2011.11**")
     with columns[1]:
-        st.write("空运操作主管") 
+        st.write("**索尼物流贸易（中国）有限公司**") 
     with columns[2]:
-        st.write("2007.12 - 2011.11")    
+        st.write("**空运操作主管**")    
     st.write("""
             - **团队管理：** 负责领导和管理团队，指导下属完成日常工作，确保团队高效运转。
             - **运输安排：** 根据客户的要求和货物的特性，选择合适的运输方式，并与物流公司、运输公司等进行协商和安排。
@@ -103,13 +102,13 @@ def personal_info():
             - **沟通协调：** 负责与客户进行沟通，了解客户的需求，并根据情况为客户提供合适的货运方案。
              """)
     st.write('')
-    columns = st.columns([5,2,3])
+    columns = st.columns([3,5,2])
     with columns[0]:
-        st.write("**飞利浦照明（上海）有限公司**")
+        st.write("**2006.07 - 2007.10**")
     with columns[1]:
-        st.write("供应链专员") 
+        st.write("**飞利浦照明（上海）有限公司**") 
     with columns[2]:
-        st.write("2006.07 - 2007.10")    
+        st.write("**供应链专员**")    
     st.write("""
             - **数据分析：** 负责物流数据的统计和分析，及时发现问题并提出解决方案，优化物流流程，提高效率和降低成本。
             - **采购管理：** 负责公司原材料、包装材料的采购工作，与供应商保持良好的合作关系，及时跟进订单进度，确保生产计划的顺利执行。
@@ -121,32 +120,51 @@ def personal_info():
     st.divider()
     
     st.write("##### 💻项目经历")
-    columns = st.columns([5,2,3])
+    columns = st.columns([3,5,2])
     with columns[0]:
-        st.write("2016.06 - 2024.07")
+        st.write("**2016.06 - 2024.07**")
     with columns[1]:
-        st.write("经营驾驶舱") 
+        st.write("**经营分析看板**") 
     with columns[2]:
-        st.write("业务负责人")
+        st.write("**项目负责人**")
     st.write("""
-            - **需求收集：** 梳理现有表结构和元数据，理清数据血缘关系，同时进行业务部门调研，收集并总结日常所需的经营数据维度。
-            - **数据提取：** 使用Power Query从数据库中提取所需数据，并聚合连接多表形成日常所需的宽表视图，供报表和看板使用。
-            - **数据处理：** 基于数据库中的原有字段，结合业务需求增加数据堆度。
-            - **看板搭建：** 使用Power BI搭建日常分析所用的数据看板，发布到BI服务，并进行日常的维护。
+            - **项目描述：**  
+            在该项目中，我负责开发和设计Power BI销售业务分析报告，以更好地理解和监控销售业绩。
+            项目的主要目标是通过数据分析和可视化展示来提高销售管理效率。该报告整合了销售、利润、订单、客户和产品分析五个主要模块，
+            并提供了详细的月度和年度对比分析。  
+            - **技能和工具：**  
+            1. 工具: Power BI, SQL, Excel  
+            2. 技能: 数据分析, 数据可视化, 商业智能, 报告自动化      
+            - **项目业绩：**  
+            1. 通过数据整合和可视化展示，提高了销售报告生成效率50%。  
+            2. 帮助销售团队识别出关键增长领域，使销售额同比增长8.27%。  
+            3. 通过订单和利润分析模块，优化了产品组合和定价策略，提高了利润率4.51%。              
+            - **项目成果：**  
+            在项目中，我通过使用Power BI进行数据分析和可视化设计，成功地提高了销售管理的透明度和决策效率。
+            项目不仅改善了业务流程，还通过数据驱动的策略提升了整体销售业绩。
              """)
     st.write('')
-    columns = st.columns([5,2,3])
+    columns = st.columns([3,5,2])
     with columns[0]:
-        st.write("2012.01 - 2015.05")
+        st.write("**2023.05 - 2024.07**")
     with columns[1]:
-        st.write("线上商城经营看板") 
+        st.write("**人工智能工具集**") 
     with columns[2]:
-        st.write("运营负责人")
+        st.write("**项目负责人**")
     st.write("""
-            - **业务诊断：** 针对业务经营的营收、利润、成本、流量进行分析，通过规模、占比、趋势进行维度拆解，形成经营分析矩阵框架。
-            - **绩效拆解：** 多维度量化各部门经营目标，可视化展现各部门绩效达标率、对各部门和员工的绩效进行评估和排名，降本增效。
-            - **用户分析：** 对用户特征标签进行可视化分析，包括用户年级、地域、教育背景等关键特征，挖掘消费复购潜力，提高UV价值。
-            - **渠道分析：** 评估不同渠道带来的用户转化率，关注访问、领券、下单、购买等关键环节专户率，优化用户行为漏斗，提质提效。
+            - **项目描述：**  
+            在此项目中，我使用Python和LangChain开发框架，以及Streamlit框架，创建了一套功能强大的人工智能工具集，
+            旨在提升数据处理与分析的自动化程度。该项目的核心是利用自然语言处理和机器学习技术，开发多个智能工具，
+            包括数据分析工具、文本生成器、问答系统和脚本生成器等，以满足多种业务需求。  
+            - **技能和工具：**  
+            1. 工具: Python, LangChain, Streamlit, OpenAI API  
+            2. 技能: 自然语言处理, 机器学习, 数据分析, 前端开发   
+            - **项目业绩：**  
+            1. 成功开发并部署了五个独立工具，显著提高了数据处理和分析的效率。  
+            2. 通过使用OpenAI API，实现了高效的文本生成和自然语言理解，优化了用户交互体验。  
+            - **项目成果：**  
+            在项目中，我通过集成先进的人工智能技术，设计并实现了一套智能工具集，大幅度提升了数据处理的效率和准确性。
+            这套工具集不仅提高了用户体验，还为企业在数据分析和决策支持方面提供了新的视角和思路。
              """)    
     st.divider()
     
@@ -608,14 +626,15 @@ def works_py():
                 st.download_button(label="**下载清晰完整报告⏬**",data=open('用逻辑回归预测泰坦尼克号幸存情况.pdf', 'rb'),file_name=f'钱海飞_{py}分析报告.pdf')
         with cols[1]:
             st.write('👇🏼**静态预览**')
-        if py == '用假设检验分析鸢尾花种类差异显著性':
-            st.image('iris.jpeg',output_format='PNG')
-        elif py == '可视化探索帕默群岛企鹅数据':
-            st.image('penguin.jpeg',output_format='PNG')
-        elif py == '用线性回归预测房屋价格':
-            st.image('price_pred.jpeg',output_format='PNG')
-        elif py == '用逻辑回归预测泰坦尼克幸存情况':
-            st.image('titannic.jpeg',output_format='PNG')
+        with st.spinner('正在加载...'):
+            if py == '用假设检验分析鸢尾花种类差异显著性':
+                st.image('iris.jpeg',output_format='PNG')
+            elif py == '可视化探索帕默群岛企鹅数据':
+                st.image('penguin.jpeg',output_format='PNG')
+            elif py == '用线性回归预测房屋价格':
+                st.image('price_pred.jpeg',output_format='PNG')
+            elif py == '用逻辑回归预测泰坦尼克幸存情况':
+                st.image('titannic.jpeg',output_format='PNG')
                         
 def works_sql():
     pages = [st.Page('sql.py', title="SQL")]
